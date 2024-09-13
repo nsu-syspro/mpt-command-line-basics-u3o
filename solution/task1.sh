@@ -1,6 +1,2 @@
 cd ../data
-TMPDIR = `mktemp -d`
-unzip archive-part1.tar -d TMPDIR
-unzip archive-part2.zip -d TMPDIR
-tar -czvf archive-combined.tar.gz TMPDIR
-rm -r TMPDIR
+tar -czvf archive-combined.tar.gz archive-part1.tar archive-part2.zip
